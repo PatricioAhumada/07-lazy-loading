@@ -35,8 +35,12 @@
     </button>
 
     <span class="spacer"></span>
+    <span> {{ user?.email }} </span>
 
-    <button mat-icon-button>
+    <button
+      mat-icon-button
+      (click)="onLogout()"
+    >
       <mat-icon>logout</mat-icon>
     </button>
 
